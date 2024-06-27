@@ -1,26 +1,26 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowDownToLine, CheckCircle, Leaf } from "lucide-react";
+import { Users, CheckCircle, HandCoins } from "lucide-react";
 import Link from "next/link";
 
 const perks = [
   {
-    name: 'Instant Delivery',
-    Icon: ArrowDownToLine,
+    name: 'Exclusive UCR Community',
+    Icon: Users,
     description:
-      'Get your assets delivered to your email in seconds and download them right away.',
+      'Enjoy a secure and trusted environment where only UCR students can buy and sell, ensuring a community-focused marketplace.',
   },
   {
-    name: 'Guaranteed Quality',
+    name: 'Convenient and Local',
     Icon: CheckCircle,
     description:
-      'Every asset on our platform is verified by our team to ensure our highest quality standards. Not happy? We offer a 30-day refund guarantee.',
+      'Find items you need right on campus, making pickups and exchanges easy and hassle-free without the need for long-distance travel.',
   },
   {
-    name: 'For the Planet',
-    Icon: Leaf,
+    name: 'Cost-Effective Solutions',
+    Icon: HandCoins,
     description:
-      "We've pledged 1% of sales to the preservation and restoration of the natural environment.",
+      "Save money by purchasing pre-loved items at affordable prices, and make extra cash by selling things you no longer need.",
   },
 ]
 
@@ -30,16 +30,16 @@ export default function Home() {
     <>
     <MaxWidthWrapper>
       <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
-        <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>Your marketplace for daily products</h1>
+        <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>Your Campus Marketplace: <span style={{ color: '#003DA5' }}> Buy, Sell, Connect</span></h1>
         <p className='mt-6 text-lg max-w-prose text-muted-foreground'>
-            Welcome to UCR Marketplace. Every listing on our
-            platform is verified by our team to ensure our
-            highest quality standards.
+            Discover a seamless way to buy and sell within the UCR community. From furniture and 
+            electronics to bikes and textbooks, connect with fellow students to find what you need or 
+            pass on items you no longer use. Safe, convenient, and exclusively for UCR students.
         </p>
         <div className='flex flex-col sm:flex-row gap-4 mt-6'>
             <Link
               href='/products'
-              className={buttonVariants()}>
+              className={buttonVariants({ variant: "custom", size: "lg"  })}>
               Browse Trending
             </Link>
             <Button variant='ghost'>
