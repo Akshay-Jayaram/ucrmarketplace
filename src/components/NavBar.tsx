@@ -6,7 +6,7 @@ import { buttonVariants } from './ui/button'
 import Chat from './Chat'
 import { getServerSideUser } from '@/lib/payload-utils'
 import { cookies } from 'next/headers'
-//import UserAccountNav from './UserAccountNav'
+import UserAccountNav from './UserAccountNav'
 //import MobileNav from './MobileNav'
 
 const Navbar = async () => {
@@ -51,8 +51,7 @@ const Navbar = async () => {
                   )}
 
                   {user ? (
-                    //<UserAccountNav user={user} />
-                    <p></p>
+                    <UserAccountNav user={user} />
                   ) : (
                     <Link
                       href='/sign-up'
