@@ -58,7 +58,7 @@ const Navbar = async () => {
                       className={buttonVariants({
                         variant: 'ghost',
                       })}>
-                      Create account
+                      Create 2 accounts
                     </Link>
                   )}
 
