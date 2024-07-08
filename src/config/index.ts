@@ -1,43 +1,65 @@
 export const PRODUCT_CATEGORIES = [
     {
-      label: 'UI Kits',
-      value: 'ui_kits' as const,
+      label: 'Furniture',
+      value: 'furniture' as const,
       featured: [
         {
-          name: 'Editor picks',
-          href: `/products?category=ui_kits`,
-          imageSrc: '/nav/ui-kits/mixed.jpg',
-        },
-        {
-          name: 'New Arrivals',
-          href: '/products?category=ui_kits&sort=desc',
+          name: 'New Listings',
+          href: '/products?category=furniture&sort=desc',
           imageSrc: '/nav/ui-kits/blue.jpg',
         },
         {
           name: 'Bestsellers',
-          href: '/products?category=ui_kits',
+          href: '/products?category=furniture',
           imageSrc: '/nav/ui-kits/purple.jpg',
         },
       ],
     },
     {
-      label: 'Icons',
-      value: 'icons' as const,
+      label: 'Electronics',
+      value: 'electronics' as const,
       featured: [
         {
-          name: 'Favorite Icon Picks',
-          href: `/products?category=icons`,
-          imageSrc: '/nav/icons/picks.jpg',
-        },
-        {
-          name: 'New Arrivals',
-          href: '/products?category=icons&sort=desc',
+          name: 'New Listings',
+          href: '/products?category=electronics&sort=desc',
           imageSrc: '/nav/icons/new.jpg',
         },
         {
-          name: 'Bestselling Icons',
-          href: '/products?category=icons',
+          name: 'Bestsellers',
+          href: '/products?category=electronics',
           imageSrc: '/nav/icons/bestsellers.jpg',
+        },
+      ],
+    },
+    {
+      label: 'Transportation',
+      value: 'transportation' as const,
+      featured: [
+        {
+          name: 'New Listings',
+          href: '/products?category=ui_kits&transportation=desc',
+          imageSrc: '/nav/ui-kits/blue.jpg',
+        },
+        {
+          name: 'Bestsellers',
+          href: '/products?category=transportation',
+          imageSrc: '/nav/ui-kits/purple.jpg',
+        },
+      ],
+    },
+    {
+      label: 'Housing',
+      value: 'housing' as const,
+      featured: [
+        {
+          name: 'New Listings',
+          href: '/products?category=housing&sort=desc',
+          imageSrc: '/nav/ui-kits/blue.jpg',
+        },
+        {
+          name: 'Bestsellers',
+          href: '/products?category=housing',
+          imageSrc: '/nav/ui-kits/purple.jpg',
         },
       ],
     },

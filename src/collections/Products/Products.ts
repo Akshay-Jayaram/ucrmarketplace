@@ -2,7 +2,7 @@ import {
     AfterChangeHook,
     BeforeChangeHook,
   } from 'payload/dist/collections/config/types'
-  import { PRODUCT_CATEGORIES } from '../../config'
+  import { PRODUCT_CATEGORIES } from '../../config/index'
   import { Access, CollectionConfig } from 'payload/types'
   //import { Product, User } from '../../payload-types'
   //import { stripe } from '../../lib/stripe'

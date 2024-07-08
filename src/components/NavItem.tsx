@@ -1,6 +1,6 @@
 'use client'
 
-import { PRODUCT_CATEGORIES } from '@/config'
+import { PRODUCT_CATEGORIES } from '@/config/navConfig'
 import { Button } from './ui/button'
 import { ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -61,19 +61,20 @@ const NavItem = ({
           <div className='relative bg-white'>
             <div className='mx-auto max-w-7xl px-8'>
               <div className='grid grid-cols-4 gap-x-8 gap-y-10 py-16'>
-                <div className='col-span-4 col-start-1 grid grid-cols-3 gap-x-8'>
+                <div className='col-span-4 col-start-1 grid grid-cols-5 gap-x-8'>
                   {category.featured.map((item) => (
                     <div
                       onClick={() => close}
                       key={item.name}
                       className='group relative text-base sm:text-sm'>
-                      <div className='relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75'>
-                        <Image
+                      <div className='relative w-20 h-20 overflow-hidden rounded-full bg-gray-100 group-hover:opacity-75 flex items-center justify-center'>
+                        {/* <Image
                           src={item.imageSrc}
                           alt='product category image'
                           fill
                           className='object-cover object-center'
-                        />
+                        /> */}
+                        <item.icon className="w-12 h-12 text-gray-600" />
                       </div>
 
                       <Link
