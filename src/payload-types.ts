@@ -22,6 +22,7 @@ export interface Config {
  */
 export interface User {
   id: string;
+  products?: (string | Product)[] | null;
   role: 'admin' | 'user';
   updatedAt: string;
   createdAt: string;
@@ -46,7 +47,7 @@ export interface Product {
   name: string;
   description?: string | null;
   price: number;
-  category: 'furniture' | 'electronics' | 'transportation' | 'housing';
+  category: 'furniture' | 'electronics' | 'transportation' | 'housing' | 'others';
   approvedForSale?: ('pending' | 'approved' | 'denied') | null;
   priceId?: string | null;
   stripeId?: string | null;

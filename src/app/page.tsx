@@ -41,17 +41,24 @@ export default function Home() {
             <Link
               href='/products'
               className={buttonVariants({ variant: "custom", size: "lg"  })}>
-              Browse Trending
+              Browse Latest
             </Link>
-            <Button variant='ghost'>
-              Our quality promise &rarr;
-            </Button>
+            <Link 
+            href='/sell'
+              className={buttonVariants({variant:'ghost'})}>
+              Seller Dashboard &rarr;
+            </Link>
           </div>
       </div>
       <ProductReel
-          query={{ sort: 'desc', limit: 4 }}
+          query={{ sort: 'asc', limit: 4 }}
           href='/products?sort=recent'
-          title='New Listings'
+          title='Trending'
+        />
+        <ProductReel
+          query={{ sort: 'asc', limit: 4 }}
+          href='/products?category=furniture'
+          title='Furniture'
         />
     </MaxWidthWrapper>
 

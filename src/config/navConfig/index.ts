@@ -7,33 +7,33 @@ export const PRODUCT_CATEGORIES = [
       featured: [
         {
           name: 'Furniture',
-          href: `/products?category=ui_kits`,
+          href: `/products?category=furniture`,
           icon: Bed,
         },
         {
           name: 'Electronics',
-          href: '/products?category=ui_kits&sort=desc',
+          href: '/products?category=electronics&sort=desc',
           icon: MonitorSmartphone,
         },
         {
           name: 'Transportation',
-          href: '/products?category=ui_kits',
+          href: '/products?category=transportation',
           icon: Bike,
         },
         {
           name: 'Housing',
-          href: '/products?category=ui_kits',
+          href: '/products?category=housing',
           icon: House,
         },
         {
           name: 'Others',
-          href: '/products?category=ui_kits',
+          href: '/products?category=others',
           icon: CircleEllipsis,
         },
       ],
     },
     {
-      label: 'Sell',
+      label: 'Events',
       value: 'icons' as const,
       featured: [
         

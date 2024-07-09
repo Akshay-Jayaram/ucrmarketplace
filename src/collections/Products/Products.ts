@@ -4,10 +4,10 @@ import {
   } from 'payload/dist/collections/config/types'
   import { PRODUCT_CATEGORIES } from '../../config/index'
   import { Access, CollectionConfig } from 'payload/types'
-  //import { Product, User } from '../../payload-types'
+  import { Product, User } from '../../payload-types'
   //import { stripe } from '../../lib/stripe'
   
-  /*
+  
   const addUser: BeforeChangeHook<Product> = async ({
     req,
     data,
@@ -78,16 +78,16 @@ import {
         },
       }
     }
-  */
+  
   export const Products: CollectionConfig = {
     slug: 'products',
     admin: {
       useAsTitle: 'name',
     },
     access: {
-    //   read: isAdminOrHasAccess(),
-    //   update: isAdminOrHasAccess(),
-    //   delete: isAdminOrHasAccess(),
+       read: isAdminOrHasAccess(),
+       update: isAdminOrHasAccess(),
+       delete: isAdminOrHasAccess(),
     },
     hooks: {
       /*afterChange: [syncUser],

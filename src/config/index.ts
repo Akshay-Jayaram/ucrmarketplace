@@ -63,4 +63,11 @@ export const PRODUCT_CATEGORIES = [
         },
       ],
     },
+    {
+      label: 'Others',
+      value: 'others' as const,
+      featured: [
+        
+      ],
+    },
   ]
