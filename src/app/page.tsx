@@ -56,9 +56,22 @@ export default function Home() {
           title='Trending'
         />
         <ProductReel
-          query={{ sort: 'asc', limit: 4 }}
+          query={{ category: "furniture", sort: 'asc', limit: 4 }}
           href='/products?category=furniture'
           title='Furniture'
+          subtitle={"Pre-Loved Furniture for Comfy Dorms and Apartments"}
+        />
+        <ProductReel
+          query={{ category: "electronics", sort: 'asc', limit: 4 }}
+          href='/products?category=electronics'
+          title='Electronics'
+          subtitle={"Upgrade Your Gadgets without Breaking the Bank"}
+        />
+        <ProductReel
+          query={{ category: "housing", sort: 'asc', limit: 4 }}
+          href='/products?category=housing'
+          title='Housing'
+          subtitle={"Student Housing Deals: Find Your Next Room or Apartment"}
         />
     </MaxWidthWrapper>
 

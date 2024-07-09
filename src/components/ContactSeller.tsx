@@ -28,7 +28,8 @@ const ContactSeller = ({
         setIsSuccess(true)
       }}
       size='lg'
-      className='w-full'>
+      className='w-full'
+      variant='custom'>
       {isSuccess ? 'Check the chat!' : 'Contact the seller'}
     </Button>
   )
